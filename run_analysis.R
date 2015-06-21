@@ -27,7 +27,6 @@ names(mergeLabels) <- "ID"
 mergeLabels <- merge(mergeLabels,activityNames)
 
 # 4. Appropriately labels the data set with descriptive variable names. 
-meanStdLabels <- mergeLabels[meanStdIdx,]
 names(mergeSubject) <- "Subject"
 meanStdDataset <- cbind(Subject = mergeSubject, Activity = mergeLabels$Activity, meanStdDataset)
 
